@@ -1,8 +1,6 @@
-describe('Example', () => {
-  beforeAll(async () => {
-    await device.launchApp();
-  });
+import {expect} from 'detox';
 
+describe('Example', () => {
   beforeEach(async () => {
     await device.reloadReactNative();
   });
