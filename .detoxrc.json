@@ -25,6 +25,12 @@
       "device": {
         "avdName": "Pixel_3a_API_30"
       }
+    },
+    "device": {
+      "type": "android.attached",
+      "device": {
+        "adbName": "R39M20BGYFE"
+      }
     }
   },
   "configurations": {
@@ -34,6 +40,10 @@
     },
     "android": {
       "device": "emulator",
+      "app": "android"
+    },
+    "android.device": {
+      "device": "device",
       "app": "android"
     }
   }
