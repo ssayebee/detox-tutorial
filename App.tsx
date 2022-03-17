@@ -20,7 +20,7 @@ type ParamList = {
   [Route.World]: undefined
 }
 
-const HomeScreen = () => {
+const WelcomeScreen = () => {
   const navigation = useNavigation<NativeStackNavigationProp<ParamList>>()
   return <View />
 }
@@ -37,7 +37,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name={Route.Home} component={HomeScreen} />
+        <Stack.Screen name={Route.Home} component={WelcomeScreen} />
         <Stack.Screen name={Route.Hello} component={HelloScreen} />
         <Stack.Screen name={Route.World} component={WorldScreeen} />
       </Stack.Navigator>
