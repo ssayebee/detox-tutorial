@@ -26,7 +26,7 @@ $ yarn global add detox-cli # install detox cli
 
 ### emulator로 테스트를 실행 하는 경우
 
-설치한 **avdName**을 설치한 avd의 이름으로 변경합니다.
+터미널에 `emulator -list-avds` 명령어를 입력해 설치된 avd의 이름으로 **avdName** 값을 변경합니다.
 
 ```
   ...
