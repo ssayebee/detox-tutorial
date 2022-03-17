@@ -9,7 +9,7 @@ React Native e2e Testing 도구인 [detox](https://wix.github.io/Detox/) 사용 
 ```zsh
 $ git clone https://github.com/ssayebee/detox-tutorial # clone repo
 
-cd detox-tutorial
+$ cd detox-tutorial
 
 $ yarn # install dependancy
 
@@ -62,11 +62,11 @@ $ yarn global add detox-cli # install detox cli
 
 ### 1. build project
 
-`configurations`는 `.detoxrc.json`의 값을 참조합니다. 설정되어 있는 `configurations`은 `android`, `device`가 있습니다.
-
+`{configurations}`는 `.detoxrc.json`의 값을 참조합니다. 설정되어 있는 `configurations`은 `android`, `device`가 있습니다.
 
 ```zsh
-$ detox build -c `configurations`
+# $ detox build -c {configurations}
+$ detox build -c android # device가 emulator로 설정된 app을 build 합니다.
 ```
 
 ### 2. run metro server
@@ -85,7 +85,8 @@ $ yarn start
 테스트 실행하기
 
 ```zsh
-$ detox test -c `configurations`
+# $ detox test -c {configurations}
+$ detox test -c android # configurations에 android로 등록된 app을 테스트 합니다.
 ```
 
 현재 모든 테스트가 실패하게 되어있습니다. `e2e/firstTest.e2e.ts` 의 스팩에 맞취서 모든 테스트가 통과하게 `App.tsx` 파일을 수정합니다.
